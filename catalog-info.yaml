@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: Test-Node2
+  description: Service Test-Node2
+
+  annotations:
+    github.com/project-slug: Backstage-GoldenImage/Test-Node2
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_GoldenImage/Test-Node2/main
+    argocd/app-name: test-node2
+    backstage.io/kubernetes-id: Test-Node2
+    backstage.io/kubernetes-namespace: default
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
